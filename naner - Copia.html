@@ -1,0 +1,280 @@
+<!doctype html> <!-- Empresa ficticia :D-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Naner</title>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/css1.css" rel="stylesheet">
+    
+
+  </head>
+  <body>
+<div class="teste">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+          <div class="inner">
+            <h3 class="masthead-brand">Naner</h3>
+            <nav class="nav nav-masthead justify-content-center">
+              <a class="nav-link active" id="home" onclick="myFunction()" >Home</a>
+              <a class="nav-link" id="site" onclick="myFunction2()">Site</a>
+              <a class="nav-link" href="https://api.whatsapp.com/send?phone=5581989504384&text=Ol%C3%A1%20LUCASRENAA">Whatapp</a>
+            </nav>
+          </div>
+        </header>
+  
+ 
+      </div>
+    </div>
+      <!-- Principal JavaScript do Bootstrap
+      ================================================== -->
+      <!-- Foi colocado no final para a página carregar mais rápido -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="bootstrap/js/vendor/popper.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+   
+
+  
+
+<div id="pagina2" class="text-center" > 
+  <div id="meio">
+
+  </div>
+  <div class="teste2">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  
+
+    <main role="main" class="inner cover" id="descer">
+      <h1 class="cover-heading">Naner é atual.</h1>
+      <p class="lead">Sistemas webs, aplicativos mobile, sites responsivos e etc. Tudo aqui, com o objetivo de fazer sempre o nosso melhor!</p>
+      <p class="lead">
+        <a href="#" class="btn btn-lg btn-secondary">Saiba mais</a>
+      </p>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+
+          <p class="lead" id="fim">Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </div>
+</div>
+</div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("pagina2");
+      var y = document.getElementById("pagina1");
+      var z = document.getElementById("site");
+      var a = document.getElementById("home");
+
+
+      z.classList.remove("active");
+      a.classList.add("active");
+
+    
+        x.style.display = "block";
+        y.style.display = "none";
+
+     
+ 
+    }
+
+    function myFunction2() {
+      var x = document.getElementById("pagina2");
+      var y = document.getElementById("pagina1");
+      var z = document.getElementById("site");
+      var a = document.getElementById("home");
+
+
+      z.classList.add("active");
+      a.classList.remove("active");
+
+
+        x.style.display = "none";
+        y.style.display = "block";
+
+
+     
+ 
+    }
+
+    window.onload = initPage;
+
+function initPage(){
+  var y = document.getElementById("pagina1");
+y.style.display = "none";
+}
+    </script>
+
+
+
+<div id="pagina1">
+
+
+  <main role="main">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0"class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" ></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <img class="first-slide" src="img/Insertblock-bro.png" alt="First slide"> -->
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Hey, esse é o nosso portal de noticias </h1>
+              <p>Criamos um novo site para te manter atualizado sobre nossos projetos :D</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+         <!-- <img class="second-slide" src="img/Robotics-cuate.png" alt="Second slide"> -->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Estamos também no instagram</h1>
+              <p>Acompanhe nossas noticias por lá também</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Clique aqui</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <img class="third-slide" src="img/Code review-amico.png" alt="Third slide"> -->
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>Estamos começando a fazer uma plataforma de estudos, fique ligado!</h1>
+              <p>O foco vai ser em programação e em biologia :D</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Em construção</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Voltar</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Avançar</span>
+      </a>
+    </div>
+
+
+    <!-- Mensagens de marketing e outras featurezinhas
+    ================================================== -->
+    <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
+
+    <div class="container marketing">
+
+    
+      <!-- COMEÇAM AS MENCIONADAS FEATUREZINHAS xD -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Primeiro projeto, O BIOHELP <span class="text-muted">Supreendente, não?!</span></h2>
+          <p class="lead">O primeiro projeto em django que fiz, com um objetivo de ajudar as pessoas no periodo da pandemia. O idealizador foi Pedro Vinicius, e vou falar dele na área de Pessoas</p>
+        
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img  class="card-img-top" src="img/biohelpmenu.jfif" height="300" width="300">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">O segundo é o nexanimes <span class="text-muted">Tá legal ou não tá?</span></h2>
+          <p class="lead">O segundo projeto foi idealizado pelo pessoal da Good(Um amigo meu que criou mas o grupo foi desfeito, uma ótima experiência que tive em ter novas ideias com eles e estudamos bastante juntos)</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img  class="card-img-top" src="img/good.png" height="300" width="300">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">E, por último, esse aqui o controle de estoque naner. <span class="text-muted">Xeque-mate!</span></h2>
+          <p class="lead">Idealizado por mim, e pretendo criar vários outras formas de trabalhar melhor com diversos produtos. Foi feito para um restaurante de um amigo, e pretendo continuar com essa linha, construí também um controle de combustível(Onde trabalha com uma bomba e a distância percorrida pelos caminhões e assim ver quais são os melhores caminhões e assim vai)</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <div id="imagem_descer"></div>
+          <img class="card-img-top" src="img/controle_estoque.png" height="300" width="300">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /FIM DAS FEATUREZINHAS *-* -->
+        <!-- Três colunas de texto, abaixo do carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img  class="rounded-circle" src="img/lucasrenan.png" height="140" width="140">
+            <h2>Lucas Renan</h2>
+            <p>Criador de Naner, a pessoa que fez o site, quem faz os sistemas e etc. Estudante de análise e desenvolvimento de sistemas no IFPE, apaixonado e amante de todas as ferramentas técnologicas, sempre buscando o melhor.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <!--  <a href="https://storyset.com/people">Illustration by Freepik Storyset</a> -->
+            
+           
+            <img  class="rounded-circle" src="img/Adventure-pana.png" height="140" width="140">
+
+            <h2>Pedro Vinicius</h2>
+            <p>Estudande de ciências biologicas na UNIBRA, auxilia em diversos processos, cria algumas imagens, ajuda na criação do layout dando dicas. Sonha em ser professor e sempre levar o melhor do seu conhecimento para seus alunos.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img  class="rounded-circle" src="img/good_logo.png" height="140" width="140">
+            <h2>Good</h2>
+            <p>Antiga Good que fez o front-end da nexanimes, galera super gente boa</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Voltar ao topo</a></p>
+      <p>&copy; Companhia S.A., 2017-2018 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+    </footer>
+  </main>
+
+  <!-- Principal JavaScript do Bootstrap
+  ================================================== -->
+  <!-- Foi colocado no final para a página carregar mais rápido -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="assets/js/vendor/popper.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
+  <script src="assets/js/vendor/holder.min.js"></script>
+</div>
+
+  </body>
+</html>
